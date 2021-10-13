@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Newbie Finance</title>
+</head>
+
+<body>
+    <main>
+        <header class="container-header">
+            <div class="container-logo">
+                <h1>Newbie<span class="dot">.</span>Finance</h1>
+            </div>
+            <div class="container-nav">
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#conversao">Conversão</a>
+                    <a href="#">Contato</a>
+                </nav>
+            </div>
+        </header>
+        <section class="container-welcome">
+            <div class="container-text-welcome">
+                <h1>A melhor plataforma de conversão de moedas<span class="dot-welcome">.</span></h1>
+                <button class="button" id="btn-welcome">
+                    <a href="#cards">Saiba mais</a>
+                </button>
+            </div>
+            <div class="container-img-welcome">
+                <img src="img/finance.png" alt="Finance" />
+            </div>
+        </section>
+        <section class="container-card" id="cards">
+            <div class="card">
+                <h2>Simples</h2>
+                <p>A plataforma mais simples para você.</p>
+                <img src="img/check.png" alt="imagem check" />
+            </div>
+            <div class="card">
+                <h2>Rápida</h2>
+                <p>Em poucos cliques você tem o resultado em suas mãos.</p>
+                <img src="img/check.png" alt="imagem check" />
+            </div>
+            <div class="card">
+                <h2>Eficiente</h2>
+                <p>Converta valores em todas as moedas.</p>
+                <img src="img/check.png" alt="imagem check" />
+            </div>
+        </section>
+        <section class="container-price">
+            <div class="container-input">
+                <div class="container-select">
+                    <div>
+                        <label for="in" class="label-in">De:</label>
+                        <select id="in" class="select-currencie">
+                            <option value="ARS">ARS</option>
+                            <option value="AUD">AUD</option>
+                            <option value="BTC">BTC</option>
+                            <option value="CAD">CAD</option>
+                            <option value="CHF">CHF</option>
+                            <option value="CNY">CNY</option>
+                            <option value="DOGE">DOGE</option>
+                            <option value="ETH">ETH</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                            <option value="ILS">ILS</option>
+                            <option value="JPY">JPY</option>
+                            <option value="LTC">LTC</option>
+                            <option value="USD">USD</option>
+                            <option value="USDT">USDT</option>
+                            <option value="XRP">XRP</option>
+                        </select>
+                    </div>
+                    <div id="conversao">
+                        <label for="for" class="label-for">Para:</label>
+                        <select id="for" class="select-currencie">
+                            <option value="ARS">BRL</option>
+                        </select>
+                    </div>
+                </div>
+                <input type="number" placeholder="Digite o valor" class="input-value-currencie">
+                <button class="button" id="btn-price">Fazer conversão</button>
+                <h2 class="message-error"></h2>
+            </div>
+        </section>
+        <section class="result-currencie">
+            <h1 class="text-result"></h1>
+        </section>
+        <section class="container-table">
+            <table class="table">
+                <tr>
+                    <th>Moeda</th>
+                    <th>Alta</th>
+                    <th>Baixa</th>
+                </tr>
+            </table>
+        </section>
+        <hr class="line" />
+        <section class="container-contact">
+            <form autocomplete="off" class="form">
+                <h1>Contato</h1>
+                <div class="data-contact">
+                    <label for="name">Nome:</label>
+                    <input autocomplete="off" id="name" name="name" type="text" />
+                </div>
+                <div class="data-contact">
+                    <label for="email">E-mail:</label>
+                    <input id="email" name="email" type="email" />
+                </div>
+                <div class="data-contact">
+                    <label for="description">Descrição:</label>
+                    <textarea id="description" name="description" type="text"></textarea>
+                    <button class="button button-contact" type="submit">Enviar</button>
+                    <h2 class="error-contact"></h2>
+                </div>
+            </form>
+        </section>
+        <footer class="footer">
+            <div class="container-icons">
+                <a target="_blank" href="https://github.com/tfeliperibeiro">
+                    <img src="img/github.png" alt="icone Github" />
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/tfeliperibeiro/">
+                    <img src="img/linkedin.png" alt="icone Github" />
+                </a>
+            </div>
+            <p>Desenvolvido por Thiago Felipe Newbie HDN Digital.</p>
+        </footer>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
